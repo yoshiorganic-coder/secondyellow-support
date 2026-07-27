@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Yellow - プライバシーポリシー / Privacy Policy</title>
+<style>
+  :root {
+    --pitch-green: #1E6B3A;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A4A;
+    --line: #E4E4E0;
+    --bg: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background: var(--pitch-green);
+    color: #FFFFFF;
+    padding: 56px 24px 40px;
+  }
+  header .inner {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  header .badge {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 16px;
+  }
+  header h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  header p.sub {
+    margin: 0;
+    font-size: 15px;
+    color: rgba(255,255,255,0.85);
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  section:last-of-type {
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--pitch-green);
+    margin: 0 0 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  h2 .en {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    margin-top: 2px;
+    text-transform: none;
+  }
+  p {
+    margin: 12px 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  p.en {
+    font-size: 14px;
+    color: #6B6B6B;
+    border-left: 2px solid var(--line);
+    padding-left: 12px;
+    margin-top: 8px;
+  }
+  ul {
+    margin: 12px 0;
+    padding-left: 20px;
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  ul.en {
+    font-size: 14px;
+    color: #6B6B6B;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  a {
+    color: var(--pitch-green);
+  }
+  footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px 60px;
+    color: #8A8A8A;
+    font-size: 13px;
+  }
+  footer .updated {
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <span class="badge">Second Yellow</span>
+    <h1>プライバシーポリシー</h1>
+    <p class="sub">Privacy Policy</p>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>概要<span class="en">Overview</span></h2>
+    <p>
+      「Second Yellow」(以下、本アプリ)は、サッカーのカードシステムを比喩にした集中力管理アプリです。
+      本アプリは、開発者(川島良浩)個人によって開発・運営されています。
+      本ポリシーは、本アプリが取得・使用する情報について説明するものです。
+    </p>
+    <p class="en">
+      "Second Yellow" (this App) is a focus-management app built around a soccer card metaphor.
+      It is developed and operated by an individual developer, Yoshihiro Kawashima.
+      This policy explains what information the App accesses and how it is used.
+    </p>
+  </section>
+
+  <section>
+    <h2>取得する情報<span class="en">Information We Collect</span></h2>
+    <p>
+      本アプリは、いかなる個人情報も外部サーバーに送信しません。本アプリが扱う情報はすべて、お使いの端末内にのみ保存されます。
+    </p>
+    <p class="en">
+      The App does not transmit any personal information to external servers. All information handled by the App is stored exclusively on your device.
+    </p>
+    <ul>
+      <li>集中セッションの記録・カード判定履歴(SwiftDataにより端末内のみに保存)</li>
+      <li>Apple Screen Time API(Family Controls)を通じて選択した、対象アプリ・カテゴリの情報</li>
+    </ul>
+    <ul class="en">
+      <li>Session records and card-judgment history (stored on-device only, via SwiftData)</li>
+      <li>Selected target apps and categories, chosen through Apple's Screen Time API (Family Controls)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Screen Time APIについて<span class="en">About the Screen Time API</span></h2>
+    <p>
+      本アプリの主要機能(対象アプリの検知・一時ロック)は、AppleのScreen Time API(FamilyControls・ManagedSettings・DeviceActivity)によって実現されています。
+      このAPIはプライバシー保護を目的として設計されており、開発者側のコードは「どのアプリが選択されたか」という実際の情報を一切取得できません。
+      選択されたアプリ・カテゴリは、Appleのシステムが管理する匿名化されたトークンとしてのみ扱われます。
+    </p>
+    <p class="en">
+      The App's core functionality (detecting and temporarily locking selected apps) is powered by Apple's Screen Time API (FamilyControls, ManagedSettings, DeviceActivity). This API is designed with privacy as a core principle: the developer's code never has access to which specific apps you selected. Selected apps and categories are represented only as anonymized tokens managed by Apple's system.
+    </p>
+  </section>
+
+  <section>
+    <h2>第三者への提供・トラッキング<span class="en">Third-Party Sharing &amp; Tracking</span></h2>
+    <p>
+      本アプリは、広告配信・分析(アナリティクス)・その他いかなる目的であっても、第三者へ情報を提供・共有しません。
+      また、ユーザーの行動を追跡するトラッキング技術は使用していません。
+    </p>
+    <p class="en">
+      The App does not share or provide information to any third party for advertising, analytics, or any other purpose. The App does not use any tracking technology to monitor user behavior.
+    </p>
+  </section>
+
+  <section>
+    <h2>通知<span class="en">Notifications</span></h2>
+    <p>
+      本アプリが送信する通知は、すべて端末内で処理されるローカル通知です。プッシュ通知サーバーは使用していません。
+    </p>
+    <p class="en">
+      All notifications sent by the App are local notifications processed entirely on your device. The App does not use any push notification server.
+    </p>
+  </section>
+
+  <section>
+    <h2>データの削除<span class="en">Data Deletion</span></h2>
+    <p>
+      本アプリをアンインストールすると、端末内に保存されていたすべてのデータ(セッション記録・判定履歴を含む)が削除されます。
+    </p>
+    <p class="en">
+      Uninstalling the App deletes all data stored on your device, including session records and judgment history.
+    </p>
+  </section>
+
+  <section>
+    <h2>子どものプライバシー<span class="en">Children's Privacy</span></h2>
+    <p>
+      本アプリは13歳未満の子どもを対象としたものではなく、子どもから意図的に情報を収集することはありません。
+    </p>
+    <p class="en">
+      The App is not directed at children under the age of 13, and does not knowingly collect information from children.
+    </p>
+  </section>
+
+  <section>
+    <h2>本ポリシーの変更<span class="en">Changes to This Policy</span></h2>
+    <p>
+      本ポリシーの内容は、必要に応じて更新される場合があります。変更内容は本ページに反映されます。
+    </p>
+    <p class="en">
+      This policy may be updated from time to time. Any changes will be reflected on this page.
+    </p>
+  </section>
+
+  <section>
+    <h2>お問い合わせ<span class="en">Contact</span></h2>
+    <p>
+      本ポリシーに関するご質問は、以下のメールアドレスまでご連絡ください。
+    </p>
+    <p class="en">
+      If you have any questions about this policy, please contact us at the email address below.
+    </p>
+    <p><a href="mailto:yoshi.organic@gmail.com">yoshi.organic@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="updated">
+    最終更新日 / Last updated: 2026年7月27日 (July 27, 2026)<br>
+    © 2026 Yoshihiro Kawashima
+  </div>
+</footer>
+
+</body>
+</html>
